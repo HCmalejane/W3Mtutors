@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3M Tutoring Centre | Your Way to Mastery</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- FontAwesome for Mock-up Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        w3mPrimary: '#005F73',    /* Deep Teal from Assignment Header */
+                        w3mSecondary: '#0A9396',  /* Bright Teal */
+                        w3mDark: '#121212',       /* Dark Gray for clean text */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-w3mDark font-sans">
+
+    <!-- TOP CONTROLS & UTILITIES (Mock-up Header Layout) -->
+    <div class="bg-w3mPrimary text-white text-xs py-2 px-4 md:px-12 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <span><i class="fa-solid fa-phone mr-1"></i> 060 889 7946</span>
+            <span class="hidden sm:inline"><i class="fa-solid fa-envelope mr-1"></i> support@w3mtutors.co.za</span>
+        </div>
+        <div class="text-xs tracking-wide font-medium">Empowering learners. Building futures.</div>
+    </div>
+
+    <!-- MAIN NAVBAR (Page 12 Mock-up Layout) -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 px-4 md:px-12 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <!-- Your Assignment Logo Text Placeholder -->
+            <span class="text-2xl font-bold tracking-tight text-w3mPrimary flex items-center">
+                W<span class="text-w3mSecondary">3</span>M <span class="text-xs ml-2 text-gray-500 font-normal border-l pl-2 border-gray-300">TUTORS</span>
+            </span>
+        </div>
+        
+        <!-- Navigation Menu Links -->
+        <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+            <a href="#home" class="hover:text-w3mSecondary transition">Home</a>
+            <a href="#services" class="hover:text-w3mSecondary transition">Services</a>
+            <a href="#store" class="hover:text-w3mSecondary transition">Resource Store</a>
+            <a href="#ask-tutor" class="hover:text-w3mSecondary transition">Ask-a-Tutor 24/7</a>
+        </div>
+
+        <!-- Application / Client Action Button -->
+        <div>
+            <a href="#apply" class="bg-w3mSecondary text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded hover:bg-w3mPrimary transition shadow-sm">
+                Apply to Teach
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Page 12 Description: South African learner smiling at laptop) -->
+    <section id="home" class="relative bg-gradient-to-br from-white to-gray-100 py-16 px-4 md:px-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <span class="bg-teal-100 text-w3mPrimary text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                #1 Online Tutoring & Study Platform
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-w3mPrimary">
+                Your Success <br><span class="text-w3mSecondary">Starts Here</span>
+            </h1>
+            <p class="text-base text-gray-600 max-w-lg leading-relaxed">
+                Expert online tutoring, premium study resources, and 24/7 academic support—anytime, anywhere, on any device. Tailored completely to CAPS, IEB, and university curriculums.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
+                <a href="#services" class="bg-w3mPrimary text-white font-semibold text-center px-6 py-3.5 rounded shadow hover:bg-opacity-90 transition">
+                    <i class="fa-solid fa-magnifying-glass mr-2"></i> Find a Tutor from R99
+                </a>
+                <a href="#store" class="bg-white border-2 border-w3mSecondary text-w3mSecondary font-semibold text-center px-6 py-3.5 rounded hover:bg-gray-50 transition">
+                    <i class="fa-solid fa-book-open mr-2"></i> Explore Exam Packs
+                </a>
+            </div>
+            <!-- Trust Footprints -->
+            <div class="flex items-center space-x-6 pt-4 border-t border-gray-200">
+                <div>
+                    <span class="block text-xl font-bold text-w3mPrimary">5,000+</span>
+                    <span class="text-xs text-gray-500">Happy Students</span>
+                </div>
+                <div class="border-l border-gray-300 h-8"></div>
+                <div>
+                    <span class="block text-xl font-bold text-w3mPrimary">150+</span>
+                    <span class="text-xs text-gray-500">Expert Tutors</span>
+                </div>
+                <div class="border-l border-gray-300 h-8"></div>
+                <div>
+                    <span class="block text-xl font-bold text-w3mPrimary">98%</span>
+                    <span class="text-xs text-gray-500">Success Rate</span>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column: Visual Component Placeholder -->
+        <div class="relative bg-gray-200 rounded-2xl h-80 md:h-[450px] overflow-hidden shadow-lg flex items-center justify-center">
+            <div class="text-center p-6 text-gray-400">
+                <i class="fa-solid fa-laptop-code text-5xl mb-3 text-w3mSecondary"></i>
+                <p class="text-sm font-medium">Hero Image Asset Container</p>
+                <p class="text-xs max-w-xs mt-1">Placeholder for your mockup illustration of a South African student using the online app layer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE BUSINESS VALUES (Page 3 Product Ecosystem Features) -->
+    <section id="services" class="py-16 px-4 md:px-12 bg-white">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold text-w3mPrimary tracking-tight">Our Core Educational Products</h2>
+            <p class="text-sm text-gray-500 mt-2">A multi-sided platform built to resolve overcrowded classrooms and educational barriers.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition">
+                <div class="bg-teal-50 w-12 h-12 rounded-lg flex items-center justify-center text-w3mSecondary text-xl mb-6">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="text-lg font-bold text-w3mPrimary mb-2">Live 1-on-1 & Group Tutoring</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Connecting school and university learners directly with verified subject matter experts for real-time virtual classroom execution.
+                </p>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition">
+                <div class="bg-teal-50 w-12 h-12 rounded-lg flex items-center justify-center text-w3mSecondary text-xl mb-6">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h3 class="text-lg font-bold text-w3mPrimary mb-2">Digital Study Resources</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Downloadable exam prep guides, curated video tutorial sets, and memorandums targeting CAPS, IEB, and academic foundational paths.
+                </p>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition">
+                <div class="bg-teal-50 w-12 h-12 rounded-lg flex items-center justify-center text-w3mSecondary text-xl mb-6">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3 class="text-lg font-bold text-w3mPrimary mb-2">"Ask-a-Tutor" 24/7 Chat</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    An AI-assisted, context-driven instant messaging setup helping students unblock complex homework equations at any time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DUAL FUNNEL TALENT ACQUISITION (Your Safety/Lead Layer) -->
+    <section id="apply" class="py-16 px-4 md:px-12 bg-w3mPrimary text-white rounded-t-3xl">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Join Our Rapidly Growing Instructor Pool</h2>
+            <p class="text-base text-teal-100 max-w-xl mx-auto">
+                Are you a university student or professional educator? We offer a flexible path to monetise your skills. Retain <span class="font-bold border-b border-teal-300">85% of your session payouts</span> while targeting local subjects or international English pathways.
+            </p>
+            <div class="inline-block bg-white text-w3mPrimary p-8 rounded-2xl shadow-xl text-left max-w-md w-full mt-4">
+                <h3 class="text-lg font-bold mb-2 flex items-center"><i class="fa-solid fa-circle-check text-w3mSecondary mr-2"></i> Application Engine</h3>
+                <p class="text-xs text-gray-500 mb-6">Submit your vetting files and 1-minute intro link directly to our administrative team portal via the secure gateway below.</p>
+                
+                <!-- INSERT YOUR EMBEDDED GOOGLE FORM LINK IN THE HREF BELOW -->
