@@ -4,213 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3M Tutoring Centre | Your Way to Mastery</title>
-    <!-- Traditional Bootstrap CSS CDN -->
-    <link href="https://jsdelivr.net" rel="stylesheet" crossorigin="anonymous">
-    <!-- FontAwesome Icons -->
+    <!-- Compiled Structural Layout Engine (Safe for all strict networks) -->
+    <link href="https://cloudflare.com" rel="stylesheet">
+    <!-- FontAwesome Vector Graphics Configuration -->
     <link rel="stylesheet" href="https://cloudflare.com">
     
-    
     <style>
+        /* Exact Brand Standards mapped to Page 12 Assignment Metadata */
         :root {
-            --w3m-primary: #005F73;    /* Deep Teal from Assignment Header */
-            --w3m-secondary: #0A9396;  /* Bright Teal */
-            --w3m-dark: #121212;       /* Dark Gray */
+            --w3m-primary: #005F73;
+            --w3m-secondary: #0A9396;
+            --w3m-dark: #121212;
         }
-        body { 
-            background-color: #f8f9fa; 
-            color: var(--w3m-dark); 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        }
-        .bg-w3m-primary { background-color: var(--w3m-primary) !important; }
-        .bg-w3m-secondary { background-color: var(--w3m-secondary) !important; }
-        .text-w3m-primary { color: var(--w3m-primary) !important; }
-        .text-w3m-secondary { color: var(--w3m-secondary) !important; }
-        
-        .btn-w3m-primary {
-            background-color: var(--w3m-primary);
-            color: white;
-            border: none;
-        }
-        .btn-w3m-primary:hover {
-            background-color: #004d5c;
-            color: white;
-        }
-        .btn-w3m-secondary {
-            background-color: var(--w3m-secondary);
-            color: white;
-            border: none;
-        }
-        .btn-w3m-secondary:hover {
-            background-color: #087d80;
-            color: white;
-        }
-        .btn-outline-w3m {
-            border: 2px solid var(--w3m-secondary);
-            color: var(--w3m-secondary);
-            background: transparent;
-            font-weight: 600;
-        }
-        .btn-outline-w3m:hover {
-            background-color: var(--w3m-secondary);
-            color: white;
-        }
-        .nav-link {
-            color: #495057;
-            font-weight: 500;
-        }
-        .nav-link:hover {
-            color: var(--w3m-secondary) !important;
-        }
-        .hero-section {
-            background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
-            padding: 80px 0;
-        }
-        .card-service {
-            background: white;
-            border: 1px solid #dee2e6;
-            border-radius: 12px;
-            padding: 30px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .card-service:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-        .icon-box {
-            width: 48px;
-            height: 48px;
-            background-color: #e6f4f5;
-            color: var(--w3m-secondary);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .funnel-box {
-            background: white;
-            color: var(--w3m-dark);
-            border-radius: 16px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            padding: 40px;
-            max-width: 450px;
-            margin: 30px auto 0 auto;
-        }
+        .bg-w3m-primary { background-color: var(--w3m-primary); }
+        .bg-w3m-secondary { background-color: var(--w3m-secondary); }
+        .text-w3m-primary { color: var(--w3m-primary); }
+        .text-w3m-secondary { color: var(--w3m-secondary); }
+        .border-w3m-secondary { border-color: var(--w3m-secondary); }
+        .hover-w3m-primary:hover { background-color: #004d5c; }
+        .hover-w3m-secondary:hover { background-color: #087d80; }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-    <!-- TOP UTILITIES HEADER -->
-    <div class="bg-w3m-primary text-white py-2 px-3 px-md-5 d-flex justify-content-between align-items-center" style="font-size: 12px;">
-        <div>
-            <span class="me-3"><i class="fa-solid fa-phone me-1"></i> 060 889 7946</span>
-            <span class="d-none d-sm-inline"><i class="fa-solid fa-envelope me-1"></i> support@w3mtutors.co.za</span>
+    <!-- ASSIGNMENT UTILITY BANNER LAYER -->
+    <div class="bg-w3m-primary text-white text-xs py-2 px-4 md:px-12 flex justify-between items-center shadow-sm">
+        <div class="flex items-center space-x-6">
+            <span><i class="fa-solid fa-phone text-teal-300 mr-2"></i>060 889 7946</span>
+            <span class="hidden sm:inline"><i class="fa-solid fa-envelope text-teal-300 mr-2"></i>support@w3mtutors.co.za</span>
         </div>
-        <div class="fw-medium">Empowering learners. Building futures.</div>
+        <div class="text-xs font-medium tracking-wide">Empowering learners. Building futures.</div>
     </div>
 
-    <!-- MAIN NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top py-3 px-1 px-md-5">
-        <div class="container-fluid">
-            <span class="navbar-brand fs-3 fw-bold tracking-tight text-w3m-primary">
-                W<span class="text-w3m-secondary">3</span>M <span class="fs-6 fw-normal text-muted border-start ps-2 ms-1 align-middle">TUTORS</span>
+    <!-- MAIN APP NAVIGATION PANEL (Mockup Specification Layer) -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 px-4 md:px-12 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl font-black tracking-tight text-w3m-primary">
+                W<span class="text-w3m-secondary">3</span>M <span class="text-xs ml-2 text-gray-400 font-normal border-l pl-2 border-gray-300 tracking-widest uppercase">Tutors</span>
             </span>
-            
-            <div class="d-none d-md-flex ms-auto me-4">
-                <a href="#home" class="nav-link px-3">Home</a>
-                <a href="#services" class="nav-link px-3">Services</a>
-                <a href="#apply" class="nav-link px-3">Apply to Teach</a>
-            </div>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+            <a href="#home" class="hover:text-w3m-secondary transition duration-150">Home</a>
+            <a href="#services" class="hover:text-w3m-secondary transition duration-150">Services</a>
+            <a href="#apply" class="hover:text-w3m-secondary transition duration-150">Apply to Teach</a>
+        </div>
 
-            <div>
-                <a href="#apply" class="btn btn-w3m-secondary btn-sm fw-bold text-uppercase px-4 py-2 tracking-wider">
-                    Join Roster
-                </a>
-            </div>
+        <div>
+            <a href="#apply" class="bg-w3m-secondary text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-lg hover-w3m-secondary transition duration-150 shadow-sm">
+                Join Roster
+            </a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero-section px-3 px-md-5">
-        <div class="container-fluid">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <span class="badge bg-info bg-opacity-10 text-w3m-primary fw-bold text-uppercase tracking-widest px-3 py-2 rounded-pill mb-3" style="font-size: 11px;">
-                        #1 Online Tutoring Ecosystem
-                    </span>
-                    <h1 class="display-4 fw-extrabold tracking-tight text-w3m-primary mb-3">
-                        Your Success <br><span class="text-w3m-secondary">Starts Here</span>
-                    </h1>
-                    <p class="lead text-muted mb-4" style="font-size: 16px; line-height: 1.6;">
-                        Expert online tutoring, premium study resources, and 24/7 academic support. Engineered completely around CAPS, IEB, and international English pathways.
-                    </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 pt-2">
-                        <a href="#services" class="btn btn-w3m-primary fw-semibold px-4 py-3 shadow-sm">
-                            Find a Tutor from R99
-                        </a>
-                        <a href="#apply" class="btn btn-outline-w3m px-4 py-3">
-                            Earn in Foreign Currency
-                        </a>
+    <!-- HERO SEGMENTATION VIEWPORT -->
+    <section id="home" class="relative bg-gradient-to-br from-white to-gray-100 py-16 px-4 md:px-12 lg:py-24 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <span class="bg-teal-50 text-w3m-primary text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-teal-200">
+                #1 Online Tutoring Ecosystem
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-w3m-primary leading-none">
+                Your Success <br><span class="text-w3m-secondary">Starts Here</span>
+            </h1>
+            <p class="text-base text-gray-600 max-w-lg leading-relaxed">
+                Expert online tutoring, premium study resources, and 24/7 academic support. Engineered completely around CAPS, IEB, and international English pathways.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
+                <a href="#services" class="bg-w3m-primary text-white font-bold text-center px-6 py-4 rounded-xl shadow-lg hover:bg-opacity-90 hover-w3m-primary transition duration-150">
+                    Find a Tutor from R99
+                </a>
+                <a href="#apply" class="bg-white border-2 border-w3m-secondary text-w3m-secondary font-bold text-center px-6 py-4 rounded-xl hover:bg-teal-50 transition duration-150">
+                    Earn in Foreign Currency
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mockup Visual Display Matrix -->
+        <div class="relative bg-white border border-gray-200 rounded-3xl h-80 md:h-[400px] overflow-hidden shadow-xl flex items-center justify-center">
+            <div class="text-center p-6 text-gray-400">
+                <i class="fa-solid fa-graduation-cap text-6xl mb-4 text-w3m-secondary opacity-75"></i>
+                <p class="text-sm font-semibold text-gray-700">W3M Learning Portal</p>
+                <p class="text-xs text-gray-400 mt-1 max-w-xs mx-auto">Syllabus-aligned matrix UI layers load dynamically in this view frame.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT SERVICE LAYOUT ROWS -->
+    <section id="services" class="py-20 px-4 md:px-12 bg-white border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-w3m-primary tracking-tight">Our Core Ecosystem Products</h2>
+                <div class="h-1 w-16 bg-w3m-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition duration-200 transform hover:-translate-y-1">
+                    <div class="bg-teal-50 w-12 h-12 rounded-xl flex items-center justify-center text-w3m-secondary text-xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-video"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-w3m-primary mb-2">1-on-1 Marketplace</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Connecting school and university learners directly with verified local and international subject experts.</p>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="bg-secondary bg-opacity-10 rounded-4 d-flex align-items-center justify-content-center shadow-sm" style="height: 400px;">
-                        <div class="text-center text-muted p-4">
-                            <i class="fa-solid fa-graduation-cap display-4 mb-3 text-w3m-secondary"></i>
-                            <p class="fw-medium m-0">W3M Learning Portal</p>
-                        </div>
+                <!-- Product Card 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition duration-200 transform hover:-translate-y-1">
+                    <div class="bg-teal-50 w-12 h-12 rounded-xl flex items-center justify-center text-w3m-secondary text-xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-store"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-w3m-primary mb-2">Digital Resource Store</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Downloadable exam preparation packs, video tutorials, and curriculum memorandums.</p>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition duration-200 transform hover:-translate-y-1">
+                    <div class="bg-teal-50 w-12 h-12 rounded-xl flex items-center justify-center text-w3m-secondary text-xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-w3m-primary mb-2">"Ask-a-Tutor" Chat</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">AI-assisted, 24/7 instant text support built to resolve complex homework calculations instantly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCT ECOSYSTEM -->
-    <section id="services" class="py-5 px-3 px-md-5 bg-white">
-        <div class="container-fluid py-4">
-            <div class="text-center max-w-2xl mx-auto mb-5">
-                <h2 class="fw-bold text-w3m-primary tracking-tight">Our Core Products</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card-service">
-                        <div class="icon-box"><i class="fa-solid fa-video"></i></div>
-                        <h3 class="h5 fw-bold text-w3m-primary mb-2">1-on-1 Marketplace</h3>
-                        <p class="text-muted small lh-base mb-0">Connecting school and university learners directly with verified local and international subject experts.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-service">
-                        <div class="icon-box"><i class="fa-solid fa-store"></i></div>
-                        <h3 class="h5 fw-bold text-w3m-primary mb-2">Digital Resource Store</h3>
-                        <p class="text-muted small lh-base mb-0">Downloadable exam preparation packs, video tutorials, and curriculum memorandums.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-service">
-                        <div class="icon-box"><i class="fa-solid fa-comments"></i></div>
-                        <h3 class="h5 fw-bold text-w3m-primary mb-2">"Ask-a-Tutor" Chat</h3>
-                        <p class="text-muted small lh-base mb-0">AI-assisted, 24/7 instant text support built to resolve complex homework calculations instantly.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- APPLICATION PIPELINE LAYER -->
-    <section id="apply" class="py-5 px-3 px-md-5 bg-w3m-primary text-white" style="border-radius: 24px 24px 0 0;">
-        <div class="container-fluid py-4 text-center">
-            <h2 class="fw-bold tracking-tight mb-3">Become an Independent Tutor</h2>
-            <p class="text-light max-w-xl mx-auto opacity-75 mb-4">
-                Retain <span class="fw-bold border-bottom border-light">85% of your session payouts</span>. Teach local syllabus paths or join our premium global English pipeline.
+    <!-- INTAKE FUNNEL FLOW SYSTEM -->
+    <section id="apply" class="py-20 px-4 md:px-12 bg-w3m-primary text-white">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Become an Independent Tutor</h2>
+            <p class="text-base text-teal-100 max-w-xl mx-auto opacity-90">
+                Retain <span class="font-bold border-b border-teal-300 pb-1">85% of your session payouts</span>. Teach local syllabus paths or join our premium global English pipeline.
             </p>
             
-            <div class="funnel-box text-start">
-                <h3 class="h6 fw-bold text-w3m-primary mb-2 flex items-center">
-                    <i class="fa-solid fa-circle-check text-w3m-secondary me-2"></i> Launch Application
+            <div class="inline-block bg-white text-gray-900 p-8 md:p-10 rounded-3xl shadow-2xl text-left max-w-md w-full mt-6 border border-gray-100">
+                <h3 class="text-xl font-bold text-w3m-primary mb-2 flex items-center">
+                    <i class="fa-solid fa-circle-check text-w3m-secondary mr-3"></i>Launch Application
                 </h3>
-                <p class="text-muted mb-4" style="font-size: 12px;">Submit your vetting documents, credentials, and video intro securely through our automated network link.</p>
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">Submit your vetting documents, credentials, and video intro securely through our automated network link.</p>
                 
-                <!-- REPLACE THE LINK BELOW WITH YOUR GOOGLE FORM LINK WHEN READY -->
+                <!-- CONFIGURE GOOGLE DATA FORM DIRECT TRANSFER POINTER -->
+                <a href="PASTE_YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="block w-full text-center bg-w3m-secondary text-white font-bold text-sm uppercase tracking-wider py-4 rounded-xl hover:bg-opacity-90 hover-w3m-secondary transition duration-150 shadow-md">
+                    Open Registration Form <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs opacity-75"></i>
+                </a>
+                
+                <span class="block text-[10px] text-center text-gray-400 mt-4 tracking-wide">
+                    <i class="fa-solid fa-shield-halved mr-1.5 text-w3m-secondary"></i>Fully POPIA Compliant Data Gateway.
+                </span>
+            </div>
+        </div>
+    </section>
+
