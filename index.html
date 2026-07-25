@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,8 +30,12 @@
     <!-- TOP UTILITIES HEADER -->
     <div class="bg-w3mPrimary text-white text-xs py-2 px-4 md:px-12 flex justify-between items-center border-b border-teal-800">
         <div class="flex items-center space-x-6">
-            <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-w3mAccent"></i> 060 889 7946</span>
-            <span class="hidden sm:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-w3mAccent"></i> support@w3mtutors.co.za</span>
+            <a href="tel:0608897946" class="flex items-center gap-1.5 hover:text-w3mAccent transition">
+                <i class="fa-solid fa-phone text-w3mAccent"></i> 060 889 7946
+            </a>
+            <a href="mailto:support@w3mtutors.co.za" class="hidden sm:flex items-center gap-1.5 hover:text-w3mAccent transition">
+                <i class="fa-solid fa-envelope text-w3mAccent"></i> support@w3mtutors.co.za
+            </a>
         </div>
         <div class="text-xs tracking-wide font-medium hidden sm:block">
             <i class="fa-solid fa-graduation-cap text-w3mAccent mr-1"></i> Empowering learners. Building futures.
@@ -58,9 +62,6 @@
         </div>
 
         <div class="flex items-center space-x-3">
-            <a href="#login" class="hidden sm:inline-block text-xs font-bold text-w3mPrimary hover:text-w3mSecondary px-3 py-2">
-                Log In
-            </a>
             <a href="#apply" class="bg-w3mPrimary text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg hover:bg-w3mSecondary transition shadow-sm">
                 Join Roster
             </a>
@@ -80,7 +81,7 @@
                 Expert online tutoring, premium CAPS and IEB study resources, and 24/7 academic support tailored for school and university success.
             </p>
             <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
-                <a href="#services" class="bg-w3mPrimary text-white font-semibold text-center px-6 py-3.5 rounded-lg shadow-md hover:bg-w3mSecondary transition flex items-center justify-center gap-2">
+                <a href="#marketplace" class="bg-w3mPrimary text-white font-semibold text-center px-6 py-3.5 rounded-lg shadow-md hover:bg-w3mSecondary transition flex items-center justify-center gap-2">
                     <i class="fa-solid fa-magnifying-glass"></i> Find a Tutor from R99
                 </a>
                 <a href="#resources" class="bg-white border-2 border-w3mSecondary text-w3mSecondary font-semibold text-center px-6 py-3.5 rounded-lg hover:bg-teal-50 transition flex items-center justify-center gap-2">
@@ -153,39 +154,60 @@
         </div>
     </section>
 
-    <!-- PRODUCT ECOSYSTEM -->
+    <!-- PRODUCT ECOSYSTEM SERVICES SECTION -->
     <section id="services" class="py-16 px-4 md:px-12 bg-white">
         <div class="text-center max-w-2xl mx-auto mb-12">
             <span class="text-xs font-bold text-w3mSecondary uppercase tracking-widest">Tailored Learning</span>
             <h2 class="text-3xl font-extrabold text-w3mPrimary tracking-tight mt-1">Our Core Learning Ecosystem</h2>
             <p class="text-sm text-gray-500 mt-2">Comprehensive academic support designed for primary, high school, and university students.</p>
         </div>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition">
-                <div class="bg-teal-100/80 w-12 h-12 rounded-lg flex items-center justify-center text-w3mPrimary text-xl mb-6">
-                    <i class="fa-solid fa-video"></i>
+            <!-- 1-on-1 Marketplace -->
+            <div id="marketplace" class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="bg-teal-100/80 w-12 h-12 rounded-lg flex items-center justify-center text-w3mPrimary text-xl mb-6">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-w3mPrimary mb-2">1-on-1 Marketplace</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Connect directly with police-cleared, subject-matter experts for real-time online sessions starting from R99/hr.</p>
                 </div>
-                <h3 class="text-lg font-bold text-w3mPrimary mb-2">1-on-1 Marketplace</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Connect directly with police-cleared, subject-matter experts for real-time online sessions starting from R99/hr.</p>
+                <a href="https://wa.me/27608897946?text=Hi%2C%20I%20would%20like%20to%20book%20a%201-on-1%20tutoring%20session." target="_blank" class="mt-6 inline-block text-xs font-bold text-w3mSecondary hover:text-w3mPrimary">
+                    Book Session via WhatsApp &rarr;
+                </a>
             </div>
-            <div id="resources" class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition">
-                <div class="bg-teal-100/80 w-12 h-12 rounded-lg flex items-center justify-center text-w3mPrimary text-xl mb-6">
-                    <i class="fa-solid fa-store"></i>
+
+            <!-- Digital Resource Store -->
+            <div id="resources" class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="bg-teal-100/80 w-12 h-12 rounded-lg flex items-center justify-center text-w3mPrimary text-xl mb-6">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-w3mPrimary mb-2">Digital Resource Store</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Instant access to downloadable exam packs, past papers, complete memorandums, and video solutions.</p>
                 </div>
-                <h3 class="text-lg font-bold text-w3mPrimary mb-2">Digital Resource Store</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">Instant access to downloadable exam packs, past papers, complete memorandums, and video solutions.</p>
+                <a href="mailto:support@w3mtutors.co.za?subject=Request%20Study%20Resources" class="mt-6 inline-block text-xs font-bold text-w3mSecondary hover:text-w3mPrimary">
+                    Request Exam Packs &rarr;
+                </a>
             </div>
-            <div id="ask-tutor" class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition">
-                <div class="bg-teal-100/80 w-12 h-12 rounded-lg flex items-center justify-center text-w3mPrimary text-xl mb-6">
-                    <i class="fa-solid fa-comments"></i>
+
+            <!-- Ask-a-Tutor Chat -->
+            <div id="ask-tutor" class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="bg-teal-100/80 w-12 h-12 rounded-lg flex items-center justify-center text-w3mPrimary text-xl mb-6">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-w3mPrimary mb-2">"Ask-a-Tutor" 24/7 Chat</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">AI-assisted, text-based instant support engineered to guide learners step-by-step through challenging homework questions.</p>
                 </div>
-                <h3 class="text-lg font-bold text-w3mPrimary mb-2">"Ask-a-Tutor" 24/7 Chat</h3>
-                <p class="text-sm text-gray-600 leading-relaxed">AI-assisted, text-based instant support engineered to guide learners step-by-step through challenging homework questions.</p>
+                <a href="https://wa.me/27608897946?text=Hi%2C%20I%20need%2024%2F7%20homework%20help." target="_blank" class="mt-6 inline-block text-xs font-bold text-w3mSecondary hover:text-w3mPrimary">
+                    Start Chat Support &rarr;
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- APPLICATION PIPELINE LAYER -->
+    <!-- APPLICATION PIPELINE LAYER SECTION -->
     <section id="apply" class="py-16 px-4 md:px-12 bg-gradient-to-br from-w3mPrimary to-slate-900 text-white rounded-t-3xl">
         <div class="max-w-4xl mx-auto text-center space-y-6">
             <span class="bg-teal-800/60 text-w3mAccent text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-teal-700">
@@ -195,14 +217,15 @@
             <p class="text-base text-teal-100 max-w-xl mx-auto leading-relaxed">
                 Retain <span class="font-bold border-b-2 border-w3mAccent">85% of your session payouts</span>. Empower South African learners or connect with global students through our platform.
             </p>
+            
             <div class="inline-block bg-white text-w3mDark p-8 rounded-2xl shadow-2xl text-left max-w-md w-full mt-4">
                 <h3 class="text-lg font-bold mb-1 text-w3mPrimary flex items-center">
                     <i class="fa-solid fa-circle-check text-w3mSecondary mr-2"></i> Launch Application
                 </h3>
                 <p class="text-xs text-gray-500 mb-6">Submit your vetting documents, academic credentials, and introduction securely through our portal.</p>
                 
-                <!-- REPLACE LINK BELOW WITH YOUR GOOGLE FORM LINK WHEN READY -->
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWLwdO3ObWnVg24lPRUrGPjMY81rbD8p1YkbK5Slw3vuNNPw/viewform?usp=dialog" target="_blank" class="block w-full text-center bg-w3mSecondary text-white font-bold text-sm uppercase tracking-wider py-3.5 rounded-lg hover:bg-w3mPrimary transition shadow-md">
+                <!-- External Registration Link (Replace URL with your live Google Form link) -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWLwdO3ObWnVg24lPRUrGPjMY81rbD8p1YkbK5Slw3vuNNPw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-w3mSecondary text-white font-bold text-sm uppercase tracking-wider py-3.5 rounded-lg hover:bg-w3mPrimary transition shadow-md">
                     Open Registration Form <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
                 </a>
                 
@@ -223,10 +246,10 @@
             <div>
                 <h4 class="text-white font-bold text-sm mb-3">Quick Links</h4>
                 <ul class="space-y-2">
-                    <li><a href="#services" class="hover:text-white transition">1-on-1 Tutoring</a></li>
+                    <li><a href="#marketplace" class="hover:text-white transition">1-on-1 Tutoring</a></li>
                     <li><a href="#resources" class="hover:text-white transition">CAPS / IEB Exam Packs</a></li>
                     <li><a href="#ask-tutor" class="hover:text-white transition">24/7 Homework Chat</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfWLwdO3ObWnVg24lPRUrGPjMY81rbD8p1YkbK5Slw3vuNNPw/viewform?usp=dialog" class="hover:text-white transition">Apply as a Tutor</a></li>
+                    <li><a href="#apply" class="hover:text-white transition">Apply as a Tutor</a></li>
                 </ul>
             </div>
             <div>
@@ -234,7 +257,7 @@
                 <p class="leading-relaxed">
                     20371 The Eve Singel, Jerusalem,<br>
                     Thabong Ext 12, Welkom, 9478<br>
-                    <strong>Phone:</strong> 060 889 7946
+                    <strong>Phone:</strong> <a href="tel:0608897946" class="hover:underline">060 889 7946</a>
                 </p>
             </div>
         </div>
